@@ -1,0 +1,153 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #282A3A;
+    --cor-terciaria: #735F32;
+    --cor-quartenaria: #C69749;
+}
+
+/* Geral e Ferramentas */
+/* Reversao de imagem*/
+.reverse {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* corpo da pagina */
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cor-primaria);
+    /*background: linear-gradient(180deg, var(--cor-primaria) 25%, var(--cor-secundaria)50%, var(--cor-terciaria)70%, var(--cor-quartenaria)100%);*/
+    background-repeat: no-repeat;
+    background-image: url(/pictures/jigsaw.png);
+    background-size: 51.5%;
+
+}
+
+/* Cabecalho */
+header {
+    box-sizing: border-box;
+    height: 10%;
+
+}
+
+.cabecalho {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho__caixa {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.cabecalho__titulo {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--cor-quartenaria);
+    padding: .5em;
+    align-items: center;
+}
+
+.cabecalho__imagem {
+    box-sizing: border-box;
+    height: 100%;
+    padding: .5em;
+}
+
+
+
+/* Menu */
+
+nav {
+    box-sizing: border-box;
+    height: 10%;
+}
+
+.menu {
+    padding: .5em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__menubox {
+    padding: 0.5em;
+}
+
+.menu__buton{
+    /*display: flex;*/
+    background-color: var(--cor-quartenaria);
+    border-radius: .5em;
+    border: solid .5em var(--cor-quartenaria) ;
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.menu__buton:hover{
+    background-color: var(--cor-terciaria);
+}
+
+/* Seção de texto */
+.container {
+    box-sizing: border-box;
+    height: 77%;
+}
+
+.container__caixa {
+    box-sizing: border-box;
+    height: 75%;
+}
+
+.container__titulo {
+    box-sizing: border-box;
+    justify-content: center;
+    height: auto;
+    padding: .5em;
+    color: var(--cor-terciaria);
+    text-align: center;
+}
+
+.container__paragrafo {
+    box-sizing: border-box;
+    justify-content: center;
+    height: auto;
+    margin: 0 25% 0 25%;
+    padding: .5em;
+    color: var(--cor-quartenaria);
+    text-align: center;
+}
+
+/*Roda pe */
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 3%;
+}
+
+.rodape {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.rodape__titulo {
+    box-sizing: border-box;
+    text-align: center;
+    height: 100%;
+    padding: .2em;
+    color: var(--cor-quartenaria);
+}

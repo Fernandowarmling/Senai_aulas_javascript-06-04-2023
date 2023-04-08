@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do JavaScript</title>
+    <link rel="stylesheet" href="/css/stely.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="/scripts/jquery.js"></script>
+
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+    </nav>
+    <section class="container">
+        <div class="container__caixa">
+            <h1 class="container__titulo">Proprosito da pagina</h1>
+            <p class="container__paragrafo">1- Crie uma estrutura de controle de fluxo switch para executar diferentes
+                blocos de código onde a variavel seja refrigerante, ou sorvete ou suco e caso não tenha nenhuma das
+                opções acima então informe produto esgotado por favor selecione outro.
+            </p>
+        </div>
+
+    </section>
+
+
+    <script>
+        let escolha = "suco"
+        switch (escolha) {
+            case "Suco":
+                console.log("Escolha correta" + escolha)
+                break;
+            case "Refrigerante":
+                console.log("Escolha correta " + escolha)
+                break;
+            case "Sorvete":
+                console.log("Escolha Correta" + escolha)
+                break;
+            default:
+                console.log("Produto Egotado")
+        }
+
+
+    </script>
+
+    <footer></footer>
+</body>
+
+</html>
