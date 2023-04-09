@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio do JavaScript</title>
     <link rel="stylesheet" href="/css/stely.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="/scripts/jquery.js"></script>
 </head>
+
 <body>
     <header></header>
     <nav></nav>
@@ -19,6 +22,18 @@
                 // O usuário mora em Joinville / SC, no bairro Centro, na rua "Rua dos Pinheiros" com nº 123.</p>
         </div>
     </section>
+    <script>
+        let enderecoUsuario = {
+            cidade: "Joinville",
+            estado: "SC",
+            bairro: "Centro",
+            logradouro: "Rua dos Pinheiro",
+            numero: "123",
+        }
+
+        console.log("O usuário mora em "+enderecoUsuario.cidade+"/"+enderecoUsuario.estado +", no bairro "+ enderecoUsuario.bairro + ", na "+enderecoUsuario.logradouro + " com nº "+ enderecoUsuario.numero);
+    </script>
     <footer></footer>
 </body>
+
 </html>
