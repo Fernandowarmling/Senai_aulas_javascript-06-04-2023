@@ -1,3 +1,5 @@
+@import url(/css/stely__fomulario.css);
+
 :root {
     --cor-primaria: #000000;
     --cor-secundaria: #282A3A;
@@ -104,7 +106,7 @@ nav {
 /* Seção de texto */
 .container {
     box-sizing: border-box;
-    height: 77%;
+    height: 17%;
 }
 
 .container__caixa {

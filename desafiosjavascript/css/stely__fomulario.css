@@ -1,0 +1,66 @@
+/* Fomulario */
+
+.container__formularios {
+    height: 60%;
+    box-sizing: border-box;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* titulo formulario */
+.formulario {
+    box-sizing: border-box;
+}
+
+.formulario__titulo {
+    box-sizing: border-box;
+    color: var(--cor-terciaria);
+    text-align: center;
+    justify-content: center;
+    padding: .5em;
+
+}
+
+.formulario__sub__titulo{
+    color: var(--cor-terciaria);
+}
+
+
+/* Campo de preenchimento formulario*/
+.campo__formulario {
+    box-sizing: border-box;
+    padding: .5em;
+}
+
+.campo__escolha {
+    box-sizing: border-box;
+}
+
+.campo__digitacao {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    border: .01em solid var(--cor-quartenaria);
+    color: var(--cor-quartenaria);
+}
+
+/* Botoes de envio */
+.campo__botao {
+width: 100%;
+display: flex;
+justify-content: space-around;
+
+}
+
+.campo__botao_limpar,
+.campo__botao_enviar {
+    color: var(--cor-primaria);
+    background-color: var(--cor-quartenaria);
+    width: 5em;
+    border-radius: .5em;
+
+
+}

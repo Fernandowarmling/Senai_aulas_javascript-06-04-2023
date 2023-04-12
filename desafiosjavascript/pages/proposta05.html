@@ -22,6 +22,38 @@
                 // O usuário mora em Joinville / SC, no bairro Centro, na rua "Rua dos Pinheiros" com nº 123.</p>
         </div>
     </section>
+    <section class="container__formularios">
+        <form class="formulario">
+            <legend class="formulario__titulo">
+                <h3>Informe os dados do usuario</h3>
+            </legend>
+            <div class="campo__formulario">
+                <legend class="formulario__sub__titulo"><h4>Cidade</h4></legend>
+                <label for="cidade" class="campo__escolha"></label>
+                <input type="text" name="Cidade" placeholder="Cidade" class="campo__digitacao">
+            </div>
+            <div class="campo__formulario">
+                <legend class="formulario__sub__titulo"><h4>Estado</h4></legend>
+                <label for="estado" class="campo__escolha"></label>
+                <input type="text" name="estado" placeholder="Estado" class="campo__digitacao">
+            </div>
+            <div class="campo__formulario">
+                <legend class="formulario__sub__titulo"><h4>logradouro</h4></legend>
+                <label for="logradouro" class="campo__escolha"></label>
+                <input type="text" name="escolha" placeholder="Logradouro" class="campo__digitacao">
+            </div>
+            <div class="campo__formulario">
+                <legend class="formulario__sub__titulo"><h4>Cidade</h4></legend>
+                <label for="escolha" class="campo__escolha"></label>
+                <input type="text" name="escolha" placeholder="Informe aqui oque deseja" class="campo__digitacao">
+            </div>
+            <div class="campo__botao">
+                <button type="reset" class="campo__botao_limpar">Limpar</button><button type="submit"
+                    class="campo__botao_enviar">Enviar</button>
+            </div>
+
+        </form>
+    </section>
     <script>
         let enderecoUsuario = {
             cidade: "Joinville",
@@ -31,7 +63,7 @@
             numero: "123",
         }
 
-        console.log("O usuário mora em "+enderecoUsuario.cidade+"/"+enderecoUsuario.estado +", no bairro "+ enderecoUsuario.bairro + ", na "+enderecoUsuario.logradouro + " com nº "+ enderecoUsuario.numero);
+        console.log("O usuário mora em " + enderecoUsuario.cidade + "/" + enderecoUsuario.estado + ", no bairro " + enderecoUsuario.bairro + ", na " + enderecoUsuario.logradouro + " com nº " + enderecoUsuario.numero);
     </script>
     <footer></footer>
 </body>

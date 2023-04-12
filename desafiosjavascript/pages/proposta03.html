@@ -19,6 +19,28 @@
             </p>
         </div>
     </section>
+    <section class="container__formularios">
+        <form class="formulario">
+            <legend class="formulario__titulo">
+                <h3>Dividendo</h3>
+            </legend>
+            <div class="campo__formulario">
+                <label for="" class="campo__escolha"></label>
+                <input type="dividendo" name="dividendo" placeholder="Informe o dividendo" class="campo__digitacao">
+            </div>
+            <legend class="formulario__titulo">
+                <h3>Divisor</h3>
+            </legend>
+            <div class="campo__formulario">
+                <label for="divisor" class="campo__escolha"></label>
+                <input type="number" name="divisor" placeholder="Informe o divisor" class="campo__digitacao">
+            </div>
+            <div class="campo__botao">
+                <button type="reset" class="campo__botao_limpar">Limpar</button><button type="submit"
+                    class="campo__botao_enviar">Enviar</button>
+            </div>
+        </form>
+    </section>
     <script>
         let dividendo = 10;
         let divisor = 2;

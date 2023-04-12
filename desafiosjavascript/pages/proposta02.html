@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio do JavaScript</title>
     <link rel="stylesheet" href="/css/stely.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="/scripts/jquery.js"></script>
 </head>
+
 <body>
     <header></header>
     <nav></nav>
@@ -20,11 +23,35 @@
             </p>
         </div>
     </section>
+    <section class="container__formularios">
+        <form class="formulario">
+            <legend class="formulario__titulo">
+                <h3>Primeira variavel</h3>
+            </legend>
+            <div class="campo__formulario">
+                <label for="primeira__variavel" class="campo__escolha"></label>
+                <input type="number" name="primeira__variavel" placeholder="Informe a primeira variavel" class="campo__digitacao">
+            </div>
+            <legend class="formulario__titulo">
+                <h3>Segunda variavel</h3>
+            </legend>
+            <div class="campo__formulario">
+                <label for="segunda__variavel" class="campo__escolha"></label>
+                <input type="number" name="segunda__variavel" placeholder="Informe a segunda variavel" class="campo__digitacao">
+            </div>
+            <div class="campo__botao">
+                <button type="reset" class="campo__botao_limpar">Limpar</button><button type="submit"
+                    class="campo__botao_enviar">Enviar</button>
+            </div>
+        </form>
+    </section>
+
     <script>
         let numero1 = 10;
         let numero2 = 5;
-        console.log(numero1-numero2)
+        console.log(numero1 - numero2)
     </script>
     <footer></footer>
 </body>
+
 </html>
