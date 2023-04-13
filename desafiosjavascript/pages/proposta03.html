@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio do JavaScript</title>
     <link rel="stylesheet" href="/css/stely.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/proposta03.js"></script>
 </head>
+
 <body>
     <header></header>
     <nav></nav>
     <section class="container">
         <div class="container__caixa">
             <h1 class="container__titulo">Proprosito da pagina</h1>
-            <p class="container__paragrafo">3- Crie uma função que divida 2 valores , caso o divisor seja o número zero , não deixe realizar a divisão.
+            <p class="container__paragrafo">3- Crie uma função que divida 2 valores , caso o divisor seja o número zero
+                , não deixe realizar a divisão.
             </p>
         </div>
     </section>
     <section class="container__formularios">
-        <form class="formulario">
+        <form name="proposta__tres" method="get" action="#" onsubmit="calculaDivisao()"
+            class="formulario">
             <legend class="formulario__titulo">
                 <h3>Dividendo</h3>
             </legend>
             <div class="campo__formulario">
                 <label for="" class="campo__escolha"></label>
-                <input type="dividendo" name="dividendo" placeholder="Informe o dividendo" class="campo__digitacao">
+                <input type="text" id="dividendo" placeholder="Informe o dividendo" class="campo__digitacao">
             </div>
             <legend class="formulario__titulo">
                 <h3>Divisor</h3>
             </legend>
             <div class="campo__formulario">
                 <label for="divisor" class="campo__escolha"></label>
-                <input type="number" name="divisor" placeholder="Informe o divisor" class="campo__digitacao">
+                <input type="text" id="divisor" placeholder="Informe o divisor" class="campo__digitacao" onchange="validaDivisor()">
             </div>
             <div class="campo__botao">
                 <button type="reset" class="campo__botao_limpar">Limpar</button><button type="submit"
@@ -41,18 +47,8 @@
             </div>
         </form>
     </section>
-    <script>
-        let dividendo = 10;
-        let divisor = 2;
-        if(divisor!=0){
-            console.log(dividendo/divisor)
-        }else{
-            console.log("Divisor não pode ser ZERO")
-        }
-
-        
-    </script>
 
     <footer></footer>
 </body>
+
 </html>

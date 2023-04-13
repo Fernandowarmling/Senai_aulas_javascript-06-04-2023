@@ -10,9 +10,10 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="/scripts/jquery.js"></script>
-    <script src="/scripts/site.js"></script>
+    <script src="/scripts/proposta01.js"></script>
 
 </head>
+
 <body>
     <header>
     </header>
@@ -28,13 +29,21 @@
         </div>
     </section>
     <section class="container__formularios">
-        <form class="formulario">
+        <form name="proposta__um" method="get" action="#" onsubmit="return consolidaEscolha(this.value)" class="formulario">
             <legend class="formulario__titulo">
-                <h3>Digite aqui a sua escolha</h3>
+                <h3>Faça aqui sua escolha</h3>
             </legend>
             <div class="campo__formulario">
                 <label for="escolha" class="campo__escolha"></label>
-                <input type="text" name="escolha" placeholder="Informe aqui oque deseja" class="campo__digitacao">
+                <select name="escolha" id="escolha" class="campo__digitacao" onchange="verificaEscolha(this.value)">
+                    <option value="" >Faça aqui sua escolha</option>
+                    <option value="RF">Refrigerante</option>
+                    <option value="SV">Sorvete</option>
+                    <option value="SU">Suco</option>
+                    <option value="OU">Outro</option>
+                </select>
+                <div id="opcao__escolha"></div>
+
             </div>
             <div class="campo__botao">
                 <button type="reset" class="campo__botao_limpar">Limpar</button><button type="submit"
