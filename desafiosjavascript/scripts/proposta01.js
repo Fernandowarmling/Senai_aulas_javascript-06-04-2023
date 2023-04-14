@@ -17,7 +17,7 @@ function consolidaEscolha() {
 }
 
 function verificaEscolha(escolha) {
-    if (escolha == "") {
+    if (escolha=="") {
         alert("Escolha Invalida")
     }
 }

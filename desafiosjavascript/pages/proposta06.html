@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/stely.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/proposta06.js"></script>
 </head>
 <body>
     <header></header>
@@ -19,14 +20,14 @@
             </p>
         </div>
     </section>
-    <section class="container__formularios"></section>
-    <script>
-        let frase = "teste desafio 6"
-        console.log(frase);
-        console.log(typeof frase);
-        alert(frase)
-        alert(typeof frase)
-    </script>
+    <section class="container__formularios">
+        <form name="proposta__quatro" method="get" action="#" onsubmit="processaConstante()" class="formulario">
+            <div class="campo__botao">
+                <button type="submit" class="campo__botao_enviar">Processar</button>
+            </div>
+        </form>
+    </section>
+    
     <footer></footer>
 </body>
 </html>

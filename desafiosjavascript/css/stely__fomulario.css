@@ -61,6 +61,12 @@ justify-content: space-around;
     background-color: var(--cor-quartenaria);
     width: 5em;
     border-radius: .5em;
+}
 
 
+.campo__botao_enviar:hover{
+    background-color: var(--cor-terciaria);
+}
+.campo__botao_limpar:hover{
+    background-color: var(--cor-terciaria);
 }

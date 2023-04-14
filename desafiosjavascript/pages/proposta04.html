@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/proposta04.js"></script>
 </head>
 
 <body>
@@ -19,16 +20,17 @@
         <div class="container__caixa">
             <h1 class="container__titulo">Proprosito da pagina</h1>
             <p class="container__paragrafo">4- Crie uma estrutura de repetição para imprimir os números de 1 a 1000,
-                utilizando For.
+                utilizando For no console.
             </p>
         </div>
     </section>
-    <section class="container__formularios"></section>
-    <script>
-        for (var i=1; i <= 1000; i++) {
-            console.log(i);
-        }
-    </script>
+    <section class="container__formularios">
+        <form name="proposta__quatro" method="get" action="#" onsubmit="processaFor()" class="formulario">
+            <div class="campo__botao">
+                <button type="submit" class="campo__botao_enviar">Processar</button>
+            </div>
+        </form>
+    </section>
     <footer></footer>
 </body>
 

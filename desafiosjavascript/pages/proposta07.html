@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/proposta07.js"></script>
 </head>
 
 <body>
@@ -25,13 +26,14 @@
         </div>
     </section>
     <section class="container__formularios">
-        <form class="formulario">
+        <form name="proposta__sete" method="get" action="#" onsubmit="verificaNota()"
+            class="formulario">
             <legend class="formulario__titulo">
                 <h3>Digite a nota do aluno</h3>
             </legend>
             <div class="campo__formulario">
                 <label for="nota_aluno" class="campo__escolha"></label>
-                <input type="number" name="nota_aluno" placeholder="Informe aqui oque deseja" class="campo__digitacao">
+                <input type="text" id="nota_aluno" placeholder="Informe aqui oque deseja" class="campo__digitacao">
             </div>
             <div class="campo__botao">
                 <button type="reset" class="campo__botao_limpar">Limpar</button><button type="submit"
@@ -39,21 +41,7 @@
             </div>
         </form>
     </section>
-    <script>
-        let notaAluno = 3
-
-        if (notaAluno <= 10 && notaAluno >= 7) {
-            console.log("Aluno Aprovado");
-
-        } if (notaAluno < 7 && notaAluno >= 5) {
-            console.log("Aluno Em Recuperação");
-        } if (notaAluno < 5) {
-            console.log("Aluno Reprovado");
-        }
-
-
-
-    </script>
+    
     <footer></footer>
 </body>
 

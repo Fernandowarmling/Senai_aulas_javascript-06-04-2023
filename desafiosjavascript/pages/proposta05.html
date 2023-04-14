@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/proposta05.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
         </div>
     </section>
     <section class="container__formularios">
-        <form class="formulario">
+        <form name="proposta__cinco" method="get" action="#" onsubmit="validaCadastro()" class="formulario">
             <legend class="formulario__titulo">
                 <h3>Informe os dados do usuario</h3>
             </legend>
@@ -32,35 +33,75 @@
                     <h4>Cidade</h4>
                 </legend>
                 <label for="cidade" class="campo__escolha"></label>
-                <input type="text" name="cidade" placeholder="Cidade" class="campo__digitacao">
+                <input type="text" name="txtcidade" id="cidade" placeholder="Cidade" class="campo__digitacao">
             </div>
             <div class="campo__formulario">
                 <legend class="formulario__sub__titulo">
                     <h4>Estado</h4>
                 </legend>
-                <label for="estado" class="campo__escolha"></label>
-                <input type="text" name="estado" placeholder="Estado" class="campo__digitacao">
+                <label for="estadofor" class="campo__escolha"></label>
+                <select name="txtestado" id="estado" placeholder="Estado" class="campo__digitacao"
+                    onchange="validaEstado()">
+                    <option value="">Selecione o estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+
+                </select>
             </div>
+
             <div class="campo__formulario">
                 <legend class="formulario__sub__titulo">
                     <h4>Logradouro</h4>
                 </legend>
-                <label for="logradouro" class="campo__escolha"></label>
-                <input type="text" name="logradouro" placeholder="Logradouro" class="campo__digitacao">
+                <label for="logradourofor" class="campo__escolha"></label>
+                <select name="txtlogradouro" id="logradouro" placeholder="Logradouro" class="campo__digitacao"
+                    onchange="validaTipoLogradouro()">
+                    <option value="">Selecione o estado</option>
+                    <option value="RU">Rua</option>
+                    <option value="AV">Avenida</option>
+                    <option value="SV">Servidão</option>
+                </select>
             </div>
             <div class="campo__formulario">
                 <legend class="formulario__sub__titulo">
                     <h4>Nome do logradouro</h4>
                 </legend>
-                <label for="escolha" class="campo__escolha"></label>
-                <input type="text" name="nome_logradouro" placeholder="Dos alfaiates" class="campo__digitacao">
+                <label for="nome_logradourofor" class="campo__escolha"></label>
+                <input type="text" name="txtnome_logradouro" id="nome_logradouro" placeholder="Dos alfaiates"
+                    class="campo__digitacao">
             </div>
+
             <div class="campo__formulario">
                 <legend class="formulario__sub__titulo">
                     <h4>Numero Residencia</h4>
                 </legend>
                 <label for="escolha" class="campo__escolha"></label>
-                <input type="text" name="numero_residencia" placeholder="Dos alfaiates" class="campo__digitacao">
+                <input type="text" id="numero_residencia" placeholder="123" class="campo__digitacao" onchange>
             </div>
             <div class="campo__botao">
                 <button type="reset" class="campo__botao_limpar">Limpar</button><button type="submit"
@@ -68,17 +109,7 @@
             </div>
         </form>
     </section>
-    <script>
-        let enderecoUsuario = {
-            cidade: "Joinville",
-            estado: "SC",
-            bairro: "Centro",
-            logradouro: "Rua dos Pinheiro",
-            numero: "123",
-        }
 
-        console.log("O usuário mora em " + enderecoUsuario.cidade + "/" + enderecoUsuario.estado + ", no bairro " + enderecoUsuario.bairro + ", na " + enderecoUsuario.logradouro + " com nº " + enderecoUsuario.numero);
-    </script>
     <footer></footer>
 </body>
 
