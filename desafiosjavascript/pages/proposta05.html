@@ -24,7 +24,7 @@
         </div>
     </section>
     <section class="container__formularios">
-        <form name="proposta__cinco" method="get" action="#" onsubmit="validaCadastro()" class="formulario">
+        <form name="proposta__cinco" method="get" action="#"  class="formulario" onsubmit="validaCadastro()">
             <legend class="formulario__titulo">
                 <h3>Informe os dados do usuario</h3>
             </legend>
@@ -40,8 +40,7 @@
                     <h4>Estado</h4>
                 </legend>
                 <label for="estadofor" class="campo__escolha"></label>
-                <select name="txtestado" id="estado" placeholder="Estado" class="campo__digitacao"
-                    onchange="validaEstado()">
+                <select name="txtestado" id="estado" placeholder="Estado" class="campo__digitacao">
                     <option value="">Selecione o estado</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
@@ -76,23 +75,32 @@
 
             <div class="campo__formulario">
                 <legend class="formulario__sub__titulo">
+                    <h4>Bairro</h4>
+                </legend>
+                <label for="nome_bairrofor" class="campo__escolha"></label>
+                <input type="text" name="txtnomebairro" id="nome_bairro" placeholder="Centro"
+                    class="campo__digitacao">
+            </div>
+
+            <div class="campo__formulario">
+                <legend class="formulario__sub__titulo">
                     <h4>Logradouro</h4>
                 </legend>
                 <label for="logradourofor" class="campo__escolha"></label>
-                <select name="txtlogradouro" id="logradouro" placeholder="Logradouro" class="campo__digitacao"
-                    onchange="validaTipoLogradouro()">
+                <select name="txtlogradouro" id="logradouro" placeholder="Logradouro" class="campo__digitacao">
                     <option value="">Selecione o estado</option>
-                    <option value="RU">Rua</option>
-                    <option value="AV">Avenida</option>
-                    <option value="SV">Servidão</option>
+                    <option value="Rua">Rua</option>
+                    <option value="Avenida">Avenida</option>
+                    <option value="Servidão">Servidão</option>
                 </select>
             </div>
+
             <div class="campo__formulario">
                 <legend class="formulario__sub__titulo">
                     <h4>Nome do logradouro</h4>
                 </legend>
                 <label for="nome_logradourofor" class="campo__escolha"></label>
-                <input type="text" name="txtnome_logradouro" id="nome_logradouro" placeholder="Dos alfaiates"
+                <input type="text" name="txtnomelogradouro" id="nome_logradouro" placeholder="Dos alfaiates"
                     class="campo__digitacao">
             </div>
 
@@ -100,8 +108,8 @@
                 <legend class="formulario__sub__titulo">
                     <h4>Numero Residencia</h4>
                 </legend>
-                <label for="escolha" class="campo__escolha"></label>
-                <input type="text" id="numero_residencia" placeholder="123" class="campo__digitacao" onchange>
+                <label for="fornumero_residencia" class="campo__escolha"></label>
+                <input type="text" name ="txtnumero_residencia" id="numero_residencia" placeholder="123" class="campo__digitacao">
             </div>
             <div class="campo__botao">
                 <button type="reset" class="campo__botao_limpar">Limpar</button><button type="submit"
